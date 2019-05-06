@@ -8,16 +8,23 @@ module.exports = {
             {text: 'Home', link: '/'},
             {text: 'Blog', link: '/blog/'},
             {text: 'About Me', link: '/me/'},
+            {
+                text:'Social',
+                items: [
+                    { text: 'Weibo', link: 'https://weibo.com/u/5401315308' },
+                    { text: 'Github', link: 'https://github.com/yulong88888' }
+                ]
+            }
         ],
         // sidebar: 'auto'
         sidebar: {
             '/me/': [
-                'list',
+                'list'
             ],
             '/blog/': [
                 'one', /* /foo/one.html */
                 'two'   /* /foo/two.html */
-            ],
+            ]
         }
     }
 };

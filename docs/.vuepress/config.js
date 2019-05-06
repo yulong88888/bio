@@ -11,6 +11,9 @@ module.exports = {
         ],
         // sidebar: 'auto'
         sidebar: {
+            '/me/': [
+                'list',
+            ],
             '/blog/': [
                 'one', /* /foo/one.html */
                 'two'   /* /foo/two.html */

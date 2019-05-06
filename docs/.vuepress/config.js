@@ -3,7 +3,7 @@ module.exports = {
     description: 'LengMangTech',
     themeConfig: {
         search: false,
-        lastUpdated: 'Last Updated',
+        lastUpdated: '上次更新',
         nav: [
             {text: 'Home', link: '/'},
             {text: 'Blog', link: '/blog/'},

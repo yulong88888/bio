@@ -1,4 +1,4 @@
-./.idea/*
+./idea/*
 ./node_modules/*
 ./bio.iml
 ./vuepress/dist/*

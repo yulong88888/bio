@@ -41,7 +41,6 @@
 3. 功能概述：需使用Chrome浏览器，安装与设备通信的插件，使用模块化编程动态拼接代码，将文件下载到硬件电路中使用
 4. 展示视频：见附件
 
-## 项目经历（个人独立完成）
 * **四维拓智物联网平台V2.0**
 1. 项目地址：[https://www.4dclass.net/iot](https://www.4dclass.net/iot)
 2. 技术栈：Spring boot + Spring security + Spring cloud oauth2 + JPA + EMQ（MQTT） + Redis + Mysql + Vue + Vuex + Axios + Muse-ui + MQTT Client+ 微信公众号 + 阿里天猫精灵 + 前后端分离Restful

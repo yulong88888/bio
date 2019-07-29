@@ -45,5 +45,5 @@
 1. 项目地址：[https://www.4dclass.net/iot](https://www.4dclass.net/iot)
 2. 技术栈：Spring boot + Spring security + Spring cloud oauth2 + JPA + EMQ（MQTT） + Redis + Mysql + Vue + Vuex + Axios + Muse-ui + MQTT Client+ 微信公众号 + 阿里天猫精灵 + 前后端分离Restful
 3. 功能概述：废除App机制，降低程序维护成本，采用低时延的MQTT作为通信，使用微信公众号直接可以关注、绑定设备，完成对设备的控制，对接阿里天猫精灵控制。（完美兼容阿里、腾讯产品）
-
+4. 展示视频：见附件
 

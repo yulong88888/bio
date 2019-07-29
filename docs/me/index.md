@@ -33,17 +33,17 @@
 1. 项目地址：[https://www.4dclass.net](https://www.4dclass.net) 首页下载app
 2. 技术栈：NodeJS + Node Serial Port + Vue + Electron + Highcharts
 3. 功能概述：使用Node Serial Port接收设备通过USB串口上传的数据，使用Highcharts进行数据绘制，使用Vue完成对数据的分析处理，然后使用Electron（VsCode也是用这个软件做的）打包exe
-4. 展示视频：见附件
+4. 展示视频：[见附件](./list)
 
 * **MicroPython物联网平台**
 1. 项目地址：[https://www.4dclass.net/4DclassScratch](https://www.4dclass.net/4DclassScratch)
 2. 技术栈：google blockly + ace + jquery + layui + xterm + FileSaver + Chrome插件
 3. 功能概述：需使用Chrome浏览器，安装与设备通信的插件，使用模块化编程动态拼接代码，将文件下载到硬件电路中使用
-4. 展示视频：见附件
+4. 展示视频：[见附件](./list)
 
 * **四维拓智物联网平台V2.0**
 1. 项目地址：[https://www.4dclass.net/iot](https://www.4dclass.net/iot)
 2. 技术栈：Spring boot + Spring security + Spring cloud oauth2 + JPA + EMQ（MQTT） + Redis + Mysql + Vue + Vuex + Axios + Muse-ui + MQTT Client+ 微信公众号 + 阿里天猫精灵 + 前后端分离Restful
 3. 功能概述：废除App机制，降低程序维护成本，采用低时延的MQTT作为通信，使用微信公众号直接可以关注、绑定设备，完成对设备的控制，对接阿里天猫精灵控制。（完美兼容阿里、腾讯产品）
-4. 展示视频：见附件
+4. 展示视频：[见附件](./list)
 

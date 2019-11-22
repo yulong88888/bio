@@ -22,9 +22,11 @@ module.exports = {
                 'list'
             ],
             '/blog/': [
-                'hello-spring-cloud-alibaba',
-                'two'
-            ]
+                // 'hello-spring-cloud-alibaba',
+                // 'two'
+            ],
+            '/ai/': [
+            ],
         }
     }
 };

@@ -1,4 +1,8 @@
-# 测试博客
+* IOT
+* JAVA
+* NodeJs
+* [AI](/ai/)
+
 ``` js
 export default {
   name: 'MyComponent',

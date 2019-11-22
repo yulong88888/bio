@@ -3,3 +3,5 @@
 ./bio.iml
 ./vuepress/dist/*
 bio.pdf
+/.idea/
+/package-lock.json

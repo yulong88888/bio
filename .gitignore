@@ -1,7 +1,6 @@
-./idea/*
-./node_modules/*
 ./bio.iml
-./vuepress/dist/*
 bio.pdf
 /.idea/
 /package-lock.json
+/docs/.vuepress/dist/
+/node_modules/

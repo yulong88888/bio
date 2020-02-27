@@ -11,7 +11,13 @@ features:
 - title: 2、敏捷
   details: 使用 Spring Boot + Docker 容器化部署分布式项目
 - title: 3、高效
-  details: 不喜欢造轮子（特定场景除外），以项目第一版能用、第二版优化为主，极限编程
-footer: © 2016 - 2019. LengMangTech All rights reserved. [京ICP备18014669号]
+  details: 不喜欢造轮子（特定场景除外），极限编程
 ---
+<div class="footer">
+    <div class="copyright"></div>
+    <script type="text/javascript">
+        document.getElementsByClassName('copyright')[0].innerHTML=`©2016-{{new Date().getFullYear()}} lengmang.net 版权所有`;
+    </script>
+    <div><a href="http://www.beian.miit.gov.cn/" target="_blank" style="color: #000000">京ICP备18014669号</a></div>
+</div>
 

@@ -23,6 +23,9 @@
 |**北京市浙江求是杯电子产品设计及制作** | **一等奖** | **2016.3** |
 | **全国浙江求是杯电子产品设计及制作**  | **二等奖** | **2016.5** |
 
+<viewer :src="$withBase('/img/me/2015.jpg')"></viewer><br/>
+<viewer :src="$withBase('/img/me/2016.jpg')"></viewer><br/>
+
 ## 项目经历（个人独立完成）
 * **四维拓智物联网平台V1.0**
 1. 项目地址：[https://www.4dclass.net](https://www.4dclass.net)

@@ -27,6 +27,8 @@ module.exports = {
             ],
             '/ai/': [
             ],
+            '/jetbot/': [
+            ],
         }
     }
 };

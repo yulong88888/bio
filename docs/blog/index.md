@@ -2,6 +2,7 @@
 * **JAVA**（Spring 全家桶）
 * **NodeJs**（Vue + Electron + NodeSerial）
 * [**AI**](/ai/)
+* [**Jetbot**](/jetbot/)
 
 ***
 觉得文章写的不错，**领**个红包再走吧！！！<br/>

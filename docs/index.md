@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/head.jpg
 heroText: 软件开发者-顾玉龙
-tagline: Embedded | IOT | SpringCloud | Node.js ｜ Docker ｜ AI
+tagline: Embedded | IOT | SpringCloud | Node.js | Docker
 actionText:  详细信息
 actionLink: /me/
 features:

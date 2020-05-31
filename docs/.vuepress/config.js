@@ -1,7 +1,8 @@
 module.exports = {
-    title: 'LengMangTech',
-    description: 'LengMangTech',
+    title: 'lengmang',
+    description: '软件开发者-顾玉龙',
     themeConfig: {
+        logo: '/img/logo.png',
         search: false,
         lastUpdated: '上次更新',
         nav: [

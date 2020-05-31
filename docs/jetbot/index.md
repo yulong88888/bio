@@ -27,7 +27,7 @@ sudo apt upgrade
 ```
 # RealVNC
 ```shell script
-udo apt install vino
+sudo apt install vino
 
 #touch openvino
 #!/bin/bash

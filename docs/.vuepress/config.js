@@ -15,6 +15,12 @@ module.exports = {
                     {text: 'Weibo', link: 'https://weibo.com/u/5401315308'},
                     {text: 'Github', link: 'https://github.com/yulong88888'}
                 ]
+            },
+            {
+                text: 'Product',
+                items: [
+                    {text: 'FrogBot', link: '/frogbot/'}
+                ]
             }
         ],
         sidebar: {
@@ -23,12 +29,21 @@ module.exports = {
                 'list'
             ],
             '/blog/': [
-                // 'hello-spring-cloud-alibaba',
-                // 'two'
+            ],
+            '/iot/': [
+                ''
+            ],
+            '/vue/': [
+                ''
             ],
             '/ai/': [
+                ''
             ],
             '/jetbot/': [
+                ''
+            ],
+            '/ros/': [
+                ''
             ],
         }
     }

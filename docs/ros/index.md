@@ -1,7 +1,7 @@
 # ROS环境搭建
 * <font color="red">基于Ubuntu 18.04</font>
 * **官方步骤 [http://wiki.ros.org/cn/melodic/Installation/Ubuntu](http://wiki.ros.org/cn/melodic/Installation/Ubuntu)**
-## 一、添加ROS软件源
+## 一、添加ros软件源
 ```shell script
 sudo sh -c '. /etc/lsb-release && echo "deb http://mirrors.tuna.tsinghua.edu.cn/ros/ubuntu/ `lsb_release -cs` main" > /etc/apt/sources.list.d/ros-latest.list'
 ```

@@ -12,8 +12,9 @@ module.exports = {
             {
                 text: 'Social',
                 items: [
+                    {text: 'Github', link: 'https://github.com/yulong88888'},
+                    {text: 'Bilibili', link: 'https://space.bilibili.com/10650301'},
                     {text: 'Weibo', link: 'https://weibo.com/u/5401315308'},
-                    {text: 'Github', link: 'https://github.com/yulong88888'}
                 ]
             },
             {
@@ -28,8 +29,7 @@ module.exports = {
                 '',
                 'list'
             ],
-            '/blog/': [
-            ],
+            '/blog/': [],
             '/iot/': [
                 ''
             ],
@@ -43,7 +43,9 @@ module.exports = {
                 ''
             ],
             '/ros/': [
-                ''
+                'chapter1',
+                'chapter2',
+                'chapter3'
             ],
         }
     }

@@ -94,7 +94,7 @@ if __name__ == "__main__":
 	#服务调用并显示调用结果
     print "Spwan turtle successfully [name:%s]" %(turtle_spawn())
 ```
-### 编译&运行
+### 运行
 ```shell script
 cd 到 [工程名称]
 catkin_make

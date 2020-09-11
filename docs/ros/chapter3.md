@@ -25,8 +25,13 @@ rostopic pub -r 10 /[话题名称] 双击tab键补全后面的消息结构和内
 ```
 ## rosmsg
 ```shell script
-# 查看消息的结构
+# topic的结构
 rosmsg show [消息结构名称] 双击tab键补全后面的消息结构
+```
+## rossrv
+```shell script
+# server的结构，三个横线之上是request内容，三个横线之下是response内容
+rossrv show [消息结构名称] 双击tab键补全后面的消息结构
 ```
 ## rosservice
 ```shell script

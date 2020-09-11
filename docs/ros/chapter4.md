@@ -3,7 +3,6 @@
 * build： 编译空间
 * devel： 开发空间
 * install： 安装空间
-
 ## 创建
 ```shell script
 mkdir -p [工程名称]/src

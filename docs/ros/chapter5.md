@@ -1,4 +1,4 @@
-# Publisher
+# Publisher(Topic)
 * 代码案例 [https://github.com/huchunxu/ros_21_tutorials](https://github.com/huchunxu/ros_21_tutorials)
 ## 创建功能包
 ```shell script

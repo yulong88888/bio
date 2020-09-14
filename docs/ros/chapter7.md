@@ -122,6 +122,9 @@ add_dependencies(person_subscriber ${PROJECT_NAME}_generate_messages_cpp)
 ```shell script
 cd 到 [工程名称]
 catkin_make
+# 终端打开一次需要执行一次
+# 如不想每次执行，打开主文件夹按ctrl+h显示隐藏文件，编辑.bash.rc，最后添加“source [具体路径]/[工程名]/devel/setup.bash”
+source devel/setup.bash
 # 开启新终端
 roscore
 # 开启新终端

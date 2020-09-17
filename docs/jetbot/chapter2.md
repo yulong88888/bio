@@ -10,7 +10,6 @@ ssh jetbot@192.168.31.223
 # 遇到“githubusercontent.com”打不开时使用代理 例如 export ALL_PROXY=socks5://192.168.31.158:1080
 export ALL_PROXY=socks5://科学上网电脑IP:1080
 ```
-
 ## 环境测试
 ```shell script
 # master .bashrc

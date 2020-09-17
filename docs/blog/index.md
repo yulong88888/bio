@@ -2,7 +2,7 @@
 * **JAVA**（Spring 全家桶）
 * [**VueJS**](/vue/)
 * [**AI**](/ai/)
-* [**Jetbot**](/jetbot/)
+* [**Jetbot**](/jetbot/chapter1.html)
 * [**ROS**](/ros/chapter1.html)
 
 ***

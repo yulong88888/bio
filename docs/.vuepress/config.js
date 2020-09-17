@@ -40,7 +40,8 @@ module.exports = {
                 ''
             ],
             '/jetbot/': [
-                ''
+                'chapter1',
+                'chapter2',
             ],
             '/ros/': [
                 'chapter1',

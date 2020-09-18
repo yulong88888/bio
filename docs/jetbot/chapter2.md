@@ -1,4 +1,4 @@
-# ROS
+# ROS环境
 ## 安装
 ::: tip
 记得更换软件源哦~
@@ -24,5 +24,6 @@ export ROS_MASTER_URI = http://192.168.31.223:11311 # 需要写master设备的IP
 roscore
 rosrun turtlesim turtlesim_node
 # slave 虚拟机注意网卡桥接
+# 如果出现无法控制海龟的问题，使用“rosnode info /turtlesim”排查
 rosrun turtlesim turtle_teleop_key
 ```

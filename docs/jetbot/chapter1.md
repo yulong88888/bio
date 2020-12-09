@@ -57,3 +57,26 @@ c.NotebookApp.open_browser = False
 c.NotebookApp.allow_root = True
 # 然后删除.json密码文件
 ```
+## Docker部署开发环境
+> docker下载镜像，需要单独为docker配置代理
+```shell script
+git clone http://github.com/NVIDIA-AI-IOT/jetbot.git
+cd jetbot/docker/
+sudo vim enable.sh # 删除OLED显示
+
+# docker配置代理
+sudo mkdir -p /etc/systemd/system/docker.service.d
+sudo touch /etc/systemd/system/docker.service.d/proxy.conf
+vi /etc/systemd/system/docker.service.d/proxy.conf
+# 录入
+[Service]
+Environment="HTTP_PROXY=[ip]:[port]"
+Environment="HTTPS_PROXY=[ip]:[port]"
+# 重启（可以使用“sudo docker info”检查配置）
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+
+# 最后
+cd ~/jetbot/docker/
+./enable.sh $HOME
+```

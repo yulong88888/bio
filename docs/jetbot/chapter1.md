@@ -6,7 +6,7 @@
 ## 软件源
 ::: tip
 此处使用arm内核，与其他cpu配置相比多了个“-ports”<br/>
-路径为“/etc/apt/source.list“<br/>
+路径为“/etc/apt/sources.list“<br/>
 遇到加锁时“sudo rm /var/lib/apt/lists/lock”<br/>
 :::
 ```shell script

@@ -80,3 +80,10 @@ sudo systemctl restart docker
 cd ~/jetbot/docker/
 ./enable.sh $HOME
 ```
+## Docker直接部署Jupyter
+> 可进入[https://registry.hub.docker.com/r/jetbot/jetbot/tags](https://registry.hub.docker.com/r/jetbot/jetbot/tags)查看版本
+```shell script
+docker pull jetbot/jetbot:jupyter-0.4.3-32.5.0
+
+sudo docker run -it -d --restart always --runtime nvidia --network host --privileged --device /dev/video* --volume /dev/bus/usb:/dev/bus/usb --volume /tmp/argus_socket:/tmp/argus_socket -p 8888:8888 -v $HOME:/workspace --workdir /workspace --name=jetbot_jupyter --memory-swap=-1 --env JETBOT_DEFAULT_CAMERA=opencv_gst_camera jetbot/jetbot:jupyter-0.4.3-32.5.0
+```

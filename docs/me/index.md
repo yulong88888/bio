@@ -33,9 +33,9 @@
 3. 功能概述：包括一套简易用户管理系统，用户登录并绑定设备，从而完成用户对设备的控制，使用websocket通信
 
 * **PowerAnchor Datalogger**
-1. 项目地址：[https://www.4dclass.net](https://www.4dclass.net) 首页下载app
+1. 项目地址：[http://designability.com.au/equipment/power-anchor/](http://designability.com.au/equipment/power-anchor/)
 2. 技术栈：NodeJS + Node Serial Port + Vue + Electron + Highcharts
-3. 功能概述：使用Node Serial Port接收设备通过USB串口上传的数据，使用Highcharts进行数据绘制，使用Vue完成对数据的分析处理，然后使用Electron（VsCode也是用这个软件做的）打包exe
+3. 功能概述：为澳大利亚某公司开发，使用Node Serial Port接收设备通过USB串口上传的数据，使用Highcharts进行数据绘制，使用Vue完成对数据的分析处理，然后使用Electron（VsCode也是用这个软件做的）打包exe
 4. 展示视频：[见附件](./list.html)
 
 * **MicroPython物联网平台**
@@ -50,3 +50,18 @@
 3. 功能概述：废除App机制，降低程序维护成本，采用低时延的MQTT作为通信，使用微信公众号直接可以关注、绑定设备，完成对设备的控制，对接阿里天猫精灵控制。（完美兼容阿里、腾讯产品）
 4. 展示视频：[见附件](./list.html)
 
+* **信息技术综合教学平台**
+1. 项目地址：[http://iotjx.51hhx.com/](http://iotjx.51hhx.com/)
+2. 技术栈：VuePress
+3. 功能概述：硬件编程笔记、起到学习辅助作用
+
+* **人体&手势识别系统**
+1. 项目地址：[https://www.hirkj.com/tfjs/](https://www.hirkj.com/tfjs/)
+2. 技术栈：VueJS + Tensorflow JavaScript
+3. 功能概述：识别人体17个关键点 + 手部21个关键点
+
+* **机械手实时控制系统**
+1. 项目地址：[https://www.hirkj.com/tfjs/](https://www.hirkj.com/tfjs/)
+2. 技术栈：VueJS + Tensorflow JavaScript + WebUSB + Arduino
+3. 功能概述：通过识别手部21个关键点与向量计算，完成对机械手的实时控制
+4. 展示视频：[见附件](./list.html)

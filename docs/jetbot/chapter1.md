@@ -57,13 +57,8 @@ c.NotebookApp.open_browser = False
 c.NotebookApp.allow_root = True
 # 然后删除.json密码文件
 ```
-## Docker部署开发环境
-> docker下载镜像，需要单独为docker配置代理
+## Docker代理
 ```shell script
-git clone http://github.com/NVIDIA-AI-IOT/jetbot.git
-cd jetbot/docker/
-sudo vim enable.sh # 删除OLED显示
-
 # docker配置代理
 sudo mkdir -p /etc/systemd/system/docker.service.d
 sudo touch /etc/systemd/system/docker.service.d/proxy.conf
@@ -75,15 +70,48 @@ Environment="HTTPS_PROXY=[ip]:[port]"
 # 重启（可以使用“sudo docker info”检查配置）
 sudo systemctl daemon-reload
 sudo systemctl restart docker
-
-# 最后
-cd ~/jetbot/docker/
-./enable.sh $HOME
 ```
-## Docker直接部署Jupyter
-> 可进入[https://registry.hub.docker.com/r/jetbot/jetbot/tags](https://registry.hub.docker.com/r/jetbot/jetbot/tags)查看版本
+## Docker部署
+::: tip
+下方基于docker部署的内容，可直接通过此处查看有无更新的版本
+[https://registry.hub.docker.com/r/jetbot/jetbot/tags](https://registry.hub.docker.com/r/jetbot/jetbot/tags)
+:::
+## Docker Jupyter
 ```shell script
 docker pull jetbot/jetbot:jupyter-0.4.3-32.5.0
 
 sudo docker run -it -d --restart always --runtime nvidia --network host --privileged --device /dev/video* --volume /dev/bus/usb:/dev/bus/usb --volume /tmp/argus_socket:/tmp/argus_socket -p 8888:8888 -v $HOME:/workspace --workdir /workspace --name=jetbot_jupyter --memory-swap=-1 --env JETBOT_DEFAULT_CAMERA=opencv_gst_camera jetbot/jetbot:jupyter-0.4.3-32.5.0
+```
+## Docker CSICamera
+```shell
+docker pull jetbot/jetbot:camera-0.4.3-32.5.0
+
+sudo docker run -it -d --restart always --runtime nvidia --network host --privileged --device /dev/video* --volume /dev/bus/usb:/dev/bus/usb --volume /tmp/argus_socket:/tmp/argus_socket -p 8888:8888 -v $HOME:/workspace --workdir /workspace --name=jetbot_jupyter --memory-swap=-1 --env JETBOT_DEFAULT_CAMERA=zmq_camera jetbot/jetbot:jupyter-0.4.3-32.5.0
+
+sudo docker run -it -d --restart always --runtime nvidia --network host --privileged --device /dev/video* --volume /dev/bus/usb:/dev/bus/usb --volume /tmp/argus_socket:/tmp/argus_socket --privileged --name=jetbot_camera jetbot/jetbot:camera-0.4.3-32.5.0
+```
+```python
+# CSI摄像头程序
+from IPython.display import display
+import ipywidgets
+import traitlets
+from jetbot import Camera, bgr8_to_jpeg
+import cv2
+
+camera = Camera()
+
+image_widget = ipywidgets.Image()
+
+#处理图片
+def flipJpg(camera_image):
+    temp = cv2.flip(camera_image, -1)
+    return bgr8_to_jpeg(temp)
+
+traitlets.dlink((camera, 'value'), (image_widget, 'value'), transform=flipJpg)
+
+display(image_widget)
+```
+## 串口驱动
+```shell script
+apt-get install python3-serial
 ```

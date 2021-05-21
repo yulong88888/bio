@@ -31,20 +31,31 @@ sudo apt update
 sudo apt upgrade
 ```
 ## RealVNC
+::: tip
+官方配置地址
+[https://developer.nvidia.com/embedded/learn/tutorials/vnc-setup](https://developer.nvidia.com/embedded/learn/tutorials/vnc-setup)<br/>
+realvnc下载地址
+[https://www.realvnc.com/en/connect/download/viewer/](https://www.realvnc.com/en/connect/download/viewer/)
+:::
 ```shell script
-sudo apt install vino
+# 1.Enable the VNC server to start each time you log in
+#   If you have a Jetson Nano 2GB Developer Kit (running LXDE)
+mkdir -p ~/.config/autostart
+cp /usr/share/applications/vino-server.desktop ~/.config/autostart/.
+# For all other Jetson developer kits (running GNOME)
+cd /usr/lib/systemd/user/graphical-session.target.wants
+sudo ln -s ../vino-server.service ./.
 
-#touch openvino
-#!/bin/bash
-export DISPLAY=:1
-gsettings set org.gnome.Vino enabled true
+# 2.Configure the VNC server
 gsettings set org.gnome.Vino prompt-enabled false
 gsettings set org.gnome.Vino require-encryption false
-/usr/lib/vino/vino-server &
 
-chmod +x ~/openvino
+# 3.Set a password to access the VNC server
+gsettings set org.gnome.Vino authentication-methods "['vnc']"
+gsettings set org.gnome.Vino vnc-password $(echo -n 'jetbot'|base64)
 
-~/openvino
+# 4.Reboot the system so that the settings take effect
+sudo reboot
 ```
 ## Jupyter iframe
 ```shell script
@@ -84,11 +95,21 @@ sudo docker run -it -d --restart always --runtime nvidia --network host --privil
 ```
 ## Docker CSICamera
 ```shell
+docker pull jetbot/jetbot:jupyter-0.4.3-32.5.0
 docker pull jetbot/jetbot:camera-0.4.3-32.5.0
-
+# jupyter
 sudo docker run -it -d --restart always --runtime nvidia --network host --privileged --device /dev/video* --volume /dev/bus/usb:/dev/bus/usb --volume /tmp/argus_socket:/tmp/argus_socket -p 8888:8888 -v $HOME:/workspace --workdir /workspace --name=jetbot_jupyter --memory-swap=-1 --env JETBOT_DEFAULT_CAMERA=zmq_camera jetbot/jetbot:jupyter-0.4.3-32.5.0
-
+# camera
 sudo docker run -it -d --restart always --runtime nvidia --network host --privileged --device /dev/video* --volume /dev/bus/usb:/dev/bus/usb --volume /tmp/argus_socket:/tmp/argus_socket --privileged --name=jetbot_camera jetbot/jetbot:camera-0.4.3-32.5.0
+
+# 解决CSI摄像头周围泛红的问题
+# 下载camera-override.isp文件，解压到特定文件夹
+wget http://www.waveshare.net/w/upload/e/eb/Camera_overrides.tar.gz
+tar zxvf Camera_overrides.tar.gz
+sudo cp camera_overrides.isp /var/nvidia/nvcam/settings/
+# 安装文件
+sudo chmod 664 /var/nvidia/nvcam/settings/camera_overrides.isp
+sudo chown root:root /var/nvidia/nvcam/settings/camera_overrides.isp
 ```
 ```python
 # CSI摄像头程序

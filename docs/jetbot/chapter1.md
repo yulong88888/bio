@@ -136,3 +136,8 @@ display(image_widget)
 ```shell script
 apt-get install python3-serial
 ```
+## 控制台代理
+```shell script
+# 终端输入
+export ALL_PROXY=socks5://科学上网电脑IP : 端口
+```

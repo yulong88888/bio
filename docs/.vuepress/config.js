@@ -6,11 +6,11 @@ module.exports = {
         search: false,
         lastUpdated: '上次更新',
         nav: [
-            {text: 'Home', link: '/'},
-            {text: 'Blog', link: '/blog/'},
-            {text: 'About Me', link: '/me/'},
+            {text: '主页', link: '/'},
+            {text: '博客', link: '/blog/'},
+            {text: '关于', link: '/me/'},
             {
-                text: 'Social',
+                text: '社交',
                 items: [
                     {text: 'Github', link: 'https://github.com/yulong88888'},
                     {text: 'Bilibili', link: 'https://space.bilibili.com/10650301'},
@@ -18,7 +18,7 @@ module.exports = {
                 ]
             },
             {
-                text: 'Product',
+                text: '产品',
                 items: [
                     {text: 'FrogBot', link: '/frogbot/'}
                 ]
@@ -56,6 +56,11 @@ module.exports = {
                 'chapter9',
                 'chapter10',
                 'chapter11',
+                'chapter12',
+            ],
+            '/ros2/': [
+                'chapter1',
+                'chapter2'
             ],
         }
     }

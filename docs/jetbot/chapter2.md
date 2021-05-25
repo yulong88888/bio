@@ -1,29 +1,38 @@
-# ROS环境
+# ROS2环境
+::: tip
+ROS2取消了主从模式，只需要将“ROS_DOMAIN_ID”进行配置即可
+:::
 ## 安装
 ::: tip
-记得更换软件源哦~
+下方基于docker部署的内容，可直接通过此处查看有无更新的版本
+[https://registry.hub.docker.com/search?q=nvidiajetson&type=image](https://registry.hub.docker.com/search?q=nvidiajetson&type=image)
 :::
 ```shell script
-# windows下直接使用ssh
-ssh jetbot@192.168.31.223
-# 和正常安装ROS步骤一样操作 具体参照ROS章节
-# 遇到“githubusercontent.com”打不开时使用代理 例如 export ALL_PROXY=socks5://192.168.31.158:1080
-export ALL_PROXY=socks5://科学上网电脑IP:1080
-```
-## 环境测试
-```shell script
-# master .bashrc
-export ROS_IP = `hostname -I | awk '{print $1}'`
-export ROS_HOSTNAME = `hostname -I | awk '{print $1}'`
-# slave .bashrc
-export ROS_IP = `hostname -I | awk '{print $1}'`
-export ROS_HOSTNAME = `hostname -I | awk '{print $1}'`
-export ROS_MASTER_URI = http://192.168.31.223:11311 # 需要写master设备的IP：PORT
+# 拉取镜像
+docker pull nvidiajetson/l4t-ros2-foxy
+# 查看版本号
+sudo docker images
+# 对应版本号做修改
+sudo docker run -it -d --runtime nvidia --network host --privileged  --device /dev/video* --volume /dev/bus/usb:/dev/bus/usb --volume /tmp/argus_socket:/tmp/argus_socket -v /home/jetbot/Desktop/ros2:/root/test --name=ros2  nvidiajetson/l4t-ros2-foxy:r32.5
+# 进入容器
+sudo docker attach ros2
 
-# master
-roscore
-rosrun turtlesim turtlesim_node
-# slave 虚拟机注意网卡桥接
-# 如果出现无法控制海龟的问题，使用“rosnode info /turtlesim”排查
-rosrun turtlesim turtle_teleop_key
+# 可退出自动删除
+# sudo docker run --runtime nvidia -it --rm --network host nvidiajetson/l4t-ros2-foxy:r32.5
+```
+## 思岚雷达
+::: tip
+思岚雷达ROS地址，选择分支ROS2即可 <br/>
+[https://github.com/Slamtec/rplidar_ros](https://github.com/Slamtec/rplidar_ros) <br/>
+[https://github.com/Slamtec/rplidar_ros/tree/ros2](https://github.com/Slamtec/rplidar_ros/tree/ros2)
+:::
+```shell script
+git clone -b ros2 https://github.com/slamtec/rplidar_ros.git
+
+cd <your_own_ros2_ws>
+colcon build --symlink-install
+
+source ./install/setup.bash
+
+ros2 launch rplidar_ros2 rplidar_launch.py
 ```

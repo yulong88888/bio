@@ -4,8 +4,11 @@ ROS2取消了主从模式，只需要将“ROS_DOMAIN_ID”进行配置即可
 :::
 ## 安装
 ::: tip
-下方基于docker部署的内容，可直接通过此处查看有无更新的版本
-[https://registry.hub.docker.com/search?q=nvidiajetson&type=image](https://registry.hub.docker.com/search?q=nvidiajetson&type=image)
+可直接通过此处查看有无更新的版本 <br/>
+官方地址 <br/>
+[https://hub.docker.com/r/dustynv/ros/tags](https://hub.docker.com/r/dustynv/ros/tags) <br/>
+非官方地址 <br/>
+[https://registry.hub.docker.com/search?q=nvidiajetson&type=image](https://registry.hub.docker.com/search?q=nvidiajetson&type=image) <br/>
 :::
 ```shell script
 # 拉取镜像

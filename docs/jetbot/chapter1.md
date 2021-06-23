@@ -141,3 +141,17 @@ apt-get install python3-serial
 # 终端输入
 export ALL_PROXY=socks5://科学上网电脑IP : 端口
 ```
+## 网络切换
+```shell
+# 连接
+nmcli device wifi connect 'SSID' password 'PASSWORD'
+# 断开
+nmcli con down SSID
+# 删除
+nmcli con del SSID
+# 查看状态
+nmcli con show
+nmcli device status
+# 开启热点
+sudo nmcli dev wifi hotspot ssid 'SSID' password 'PASSWORD'
+```

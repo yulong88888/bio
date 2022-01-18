@@ -14,10 +14,7 @@ features:
   details: 使用Docker主流技术，K8S集群控制、CI/CD，轻量级部署网络应用，与SpringCloud生态融为一体。
 ---
 <div class="footer">
-    <div class="copyright"></div>
-    <script type="text/javascript">
-        document.getElementsByClassName('copyright')[0].innerHTML=`©2016-{{new Date().getFullYear()}} lengmang.net 版权所有`;
-    </script>
-    <div><a href="https://beian.miit.gov.cn/" target="_blank" style="color: #000000">京ICP备18014669号</a></div>
+    <copyright></copyright>
 </div>
+
 

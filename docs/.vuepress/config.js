@@ -63,6 +63,11 @@ module.exports = {
                 'chapter1',
                 'chapter2'
             ],
+            '/wsl2/': [
+                'chapter1',
+                'chapter2',
+                'chapter3'
+            ],
         }
     }
 };

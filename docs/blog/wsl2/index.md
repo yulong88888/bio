@@ -3,7 +3,7 @@
 需要win11系统
 :::
 ## 基础使用
-```shell
+```shell:no-line-numbers
 # 安装
 wsl --install -d Ubuntu
 # 查看
@@ -23,7 +23,7 @@ uname -a
 ```
 
 ## 显卡驱动
-```shell
+```shell:no-line-numbers
 # 安装图形驱动
 sudo apt install mesa-utils
 sudo add-apt-repository ppa:kisak/kisak-mesa
@@ -36,7 +36,7 @@ glxgears
 ```
 
 ## Docker安装
-```shell
+```shell:no-line-numbers
 # 执行安装脚本
 curl -fsSL get.docker.com -o get-docker.sh
 sh get-docker.sh
@@ -62,7 +62,7 @@ sudo systemctl restart docker 或者 sudo service docker restart
 * Ubuntu18用显卡比较卡，不适合仿真，所以使用了Ubuntu20，但是不支持melodic版本
 
 ### Husky仿真
-```shell
+```shell:no-line-numbers
 # http://wiki.ros.org/husky_gazebo/Tutorials/Simulating%20Husky
 sudo apt-get install ros-noetic-husky-simulator
 export HUSKY_GAZEBO_DESCRIPTION=$(rospack find husky_gazebo)/urdf/description.gazebo.xacro
@@ -75,7 +75,7 @@ roslaunch husky_gazebo husky_playpen.launch
 ```
 
 ### 新建工程编译失败
-```shell
+```shell:no-line-numbers
 https://stackoverflow.com/questions/62879479/every-call-to-configure-file-fails-on-wsl-configure-file-problem-configuring-fi
 
 # /etc/wsl.conf
@@ -87,7 +87,7 @@ enabled = true
 ```
 
 ### dep无法访问
-```shell
+```shell:no-line-numbers
 sudo mkdir -p /etc/ros/rosdep/sources.list.d
 
 cd /etc/ros/rosdep/sources.list.d

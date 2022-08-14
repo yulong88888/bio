@@ -29,6 +29,10 @@ module.exports = {
                         text: 'Jetson',
                         link: '/blog/jetson',
                     },
+                    {
+                        text: 'Python',
+                        link: '/blog/python',
+                    },
                 ],
             },
             { text: '关于', link: '/me' },

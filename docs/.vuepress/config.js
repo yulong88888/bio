@@ -8,7 +8,8 @@ module.exports = {
     theme: defaultTheme({
         logo: '/img/logo.png',
         search: false,
-        lastUpdated: '上次更新',
+        contributors: false,
+        lastUpdatedText: '上次更新',
         navbar: [
             { text: '主页', link: '/' },
             {

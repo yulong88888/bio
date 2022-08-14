@@ -1,73 +1,50 @@
+const { defaultTheme } = require('@vuepress/theme-default')
+const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
+const { path } = require('@vuepress/utils')
+
 module.exports = {
     title: 'lengmang',
     description: '软件开发者-顾玉龙',
-    themeConfig: {
+    theme: defaultTheme({
         logo: '/img/logo.png',
         search: false,
         lastUpdated: '上次更新',
-        nav: [
-            {text: '主页', link: '/'},
-            {text: '博客', link: '/blog/'},
-            {text: '关于', link: '/me/'},
+        navbar: [
+            { text: '主页', link: '/' },
+            {
+                text: '博客',
+                link: '/blog',
+                activeMatch: '^/blog',
+                children: [
+                    {
+                        text: 'ROS',
+                        link: '/blog/ros',
+                    },
+                    {
+                        text: 'WSL2',
+                        link: '/blog/wsl2',
+                    },
+                    {
+                        text: 'Jetson',
+                        link: '/blog/jetson',
+                    },
+                ],
+            },
+            { text: '关于', link: '/me' },
             {
                 text: '社交',
-                items: [
-                    {text: 'Github', link: 'https://github.com/yulong88888'},
-                    {text: 'Bilibili', link: 'https://space.bilibili.com/10650301'},
-                    {text: 'Weibo', link: 'https://weibo.com/u/5401315308'},
-                ]
-            },
-            {
-                text: '产品',
-                items: [
-                    {text: 'FrogBot', link: '/frogbot/'}
+                children: [
+                    { text: 'Github', link: 'https://github.com/yulong88888' },
+                    { text: 'Bilibili', link: 'https://space.bilibili.com/10650301' },
+                    { text: 'Douyin', link: 'https://www.douyin.com/user/MS4wLjABAAAAL_El12aqF_JQE5RdA8vjSNMQM9s5ek2P9MDReko4Sws' },
+                    { text: 'Weibo', link: 'https://weibo.com/u/5401315308' },
                 ]
             }
-        ],
-        sidebar: {
-            '/me/': [
-                '',
-                'list'
-            ],
-            '/blog/': [],
-            '/iot/': [
-                ''
-            ],
-            '/vue/': [
-                ''
-            ],
-            '/ai/': [
-                ''
-            ],
-            '/jetbot/': [
-                'chapter1',
-                'chapter2',
-                'chapter3',
-                'chapter4',
-            ],
-            '/ros/': [
-                'chapter1',
-                'chapter2',
-                'chapter3',
-                'chapter4',
-                'chapter5',
-                'chapter6',
-                'chapter7',
-                'chapter8',
-                'chapter9',
-                'chapter10',
-                'chapter11',
-                'chapter12',
-            ],
-            '/ros2/': [
-                'chapter1',
-                'chapter2'
-            ],
-            '/wsl2/': [
-                'chapter1',
-                'chapter2',
-                'chapter3'
-            ],
-        }
-    }
-};
+        ]
+    }),
+    plugins: [
+        registerComponentsPlugin({
+            componentsDir: path.resolve(__dirname, './components'),
+        }),
+    ],
+}

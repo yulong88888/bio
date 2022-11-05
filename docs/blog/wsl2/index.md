@@ -22,7 +22,7 @@ wsl -t Ubuntu
 ```
 
 ## 可能用到
-```shell
+```shell:no-line-numbers
 # 修改密码（需进入wsl）
 sudo passwd <用户名>
 # 查看系统版本
@@ -30,7 +30,7 @@ uname -a
 ```
 
 ## 硬件连接
-```shell
+```shell:no-line-numbers
 # win系统安装
 winget install --interactive --exact dorssel.usbipd-win
 # 使用时候可能需要更新并关机

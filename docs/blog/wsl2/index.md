@@ -4,8 +4,12 @@
 :::
 ## 基础使用
 ```shell:no-line-numbers
+# 列举可用版本
+wsl --list --online
 # 安装
 wsl --install -d Ubuntu
+# 追加版本
+wsl --install -d Ubuntu-20.04
 # 查看
 wsl -l
 # 删除
@@ -15,11 +19,30 @@ sudo apt update
 sudo apt upgrade
 # 重启
 wsl -t Ubuntu
+```
 
+## 可能用到
+```shell
 # 修改密码（需进入wsl）
 sudo passwd <用户名>
 # 查看系统版本
 uname -a
+```
+
+## 硬件连接
+```shell
+# win系统安装
+winget install --interactive --exact dorssel.usbipd-win
+# 使用时候可能需要更新并关机
+wsl --update
+wsl --shutdown
+# wsl的linux安装
+sudo apt install linux-tools-5.4.0-77-generic hwdata
+sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20
+# win系统操作选择挂载设备
+usbipd wsl list
+usbipd wsl attach -b x-xx
+usbipd wsl detach -b x-xx
 ```
 
 ## 显卡驱动

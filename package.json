@@ -12,6 +12,6 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "element-plus": "^2.2.12"
+    "element-plus": "^2.2.19"
   }
 }

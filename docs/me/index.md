@@ -82,6 +82,10 @@
 4. 展示视频：
 <iframe src="//player.bilibili.com/player.html?aid=729273126&bvid=BV1qS4y147Bt&cid=797226217&page=1&danmaku=0&high_quality=1" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
 
+### Foxglove Contributors
+向ROS开源可视化组织【Foxglove】提交了自己的组件
+* [https://github.com/foxglove/studio-extension-marketplace](https://github.com/foxglove/studio-extension-marketplace)
+
 ## 在校期间获奖情况
 |             **赛项名称**             |  **结果**  |  **时间**  |
 |-------------------------------------|------------|-----------|

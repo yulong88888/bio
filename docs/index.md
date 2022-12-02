@@ -1,5 +1,6 @@
 ---
 home: true
+title: 主页
 heroImage: /img/head.jpg
 heroText: 软件开发者-顾玉龙
 tagline: IOT Device / ROS / VueJS / Docker / SpringCloud

@@ -1,6 +1,6 @@
-const { defaultTheme } = require('@vuepress/theme-default')
-const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
-const { path } = require('@vuepress/utils')
+import { defaultTheme } from '@vuepress/theme-default'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { path } from '@vuepress/utils'
 
 module.exports = {
     title: 'lengmang',
@@ -17,6 +17,10 @@ module.exports = {
                 link: '/blog',
                 activeMatch: '^/blog',
                 children: [
+                    {
+                        text: 'VPN',
+                        link: '/blog/vpn',
+                    },
                     {
                         text: 'ROS',
                         link: '/blog/ros',

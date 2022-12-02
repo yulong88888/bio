@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="copyright">{{ copyright }}</div>
-    <div><a href="https://beian.miit.gov.cn/" target="_blank" style="color: #000000">京ICP备18014669号</a></div>
+    <div><a href="https://beian.miit.gov.cn/" target="_blank" style="color: #FF8000">京ICP备18014669号</a></div>
   </div>
 </template>
 
@@ -20,5 +20,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

@@ -19,6 +19,8 @@
 
 ## 圈子
 * 2021年有幸成为小米CyberDog第一批400个铲屎官中的一员，第一批是从28000人中选取400个，一起探索铁蛋，也正是因为这，让我结识了圈内的许多大佬，例如铁蛋的团队成员、宇树王总、稚晖、古月居、以及追觅的工程师等人，我们线上经常活跃在微信群聊中，交流开发心得，互相答疑解惑
+* 2023年做为“狗友”近一步和小米互动，参加雷军的2023年度演讲
+<viewer :src="$withBase('/img/me/leijun.jpg')"></viewer><br/>
 
 ## 项目经历
 ::: tip
@@ -41,7 +43,7 @@
 2. 技术栈：arduino + vuejs + scratch3.0 + websocket
 3. 功能概述：使用浏览器浏览器连接小车，通过拖拽积木模块，对小车进行在线编程控制
 4. 展示视频：
-<iframe src="//player.bilibili.com/player.html?aid=556785969&bvid=BV1Ge4y1Q7MC&cid=797365105&page=1&danmaku=0&high_quality=1" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1Ge4y1Q7MC&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
 
 ### 信息技术综合教学平台
 1. 项目地址：[http://iotjx.51hhx.com/](http://iotjx.51hhx.com/)
@@ -58,33 +60,44 @@
 2. 技术栈：VueJS + Tensorflow JavaScript + WebUSB + Arduino
 3. 功能概述：通过识别手部21个关键点与向量计算，完成对机械手的实时控制
 4. 展示视频：
-<iframe src="//player.bilibili.com/player.html?aid=332253864&bvid=BV18A411N7bL&cid=314540803&page=1&danmaku=0&high_quality=1" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV18A411N7bL&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
 
 ### 智慧交通沙盘
 1. 硬件：沙盘 + jetson nano + esp8266 + stm32
 2. 技术栈：ros + pio + wifi mesh + vuejs + tensorflow
 3. 功能概述：使用教室一体机连接智能车热点，打开指定ip，通过网页控制沙盘开关，以及车辆在地图中的自动驾驶（可识别红绿灯）
 4. 展示视频：
-<iframe src="//player.bilibili.com/player.html?aid=205982153&bvid=BV1Yh411e7wp&cid=346960740&page=1&danmaku=0&high_quality=1" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
-<iframe src="//player.bilibili.com/player.html?aid=290838302&bvid=BV1qf4y1h74D&cid=346542140&page=1&danmaku=0&high_quality=1" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1Yh411e7wp&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1qf4y1h74D&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1kC4y1P77g&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
 
 ### ROS室内机器人
 1. 硬件：RPLidar-2d + IMU + Jetson Nano
 2. 技术栈：ros + cartographer + teb + vuejs + pytorch
 3. 功能概述：竞速类比赛，使用围挡围出地图，让小车在地图中能完成避障和识别红绿灯操作，能快速从入口行驶到出口
 4. 展示视频：
-<iframe src="//player.bilibili.com/player.html?aid=429260556&bvid=BV1AG41187Fi&cid=797750254&page=1&danmaku=0&high_quality=1" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"> </iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1AG41187Fi&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"> </iframe>
 
 ### ROS室外机器人
 1. 硬件：LSLidar-16lines + IMU + Nvidia NX
 2. 技术栈：ros + cartographer + ndt + teb + vuejs + pytorch
 3. 功能概述：需要先控制机器人绕场地一周采集地图，但其中并不记录地图坐标，也就是说更换新路线无需再次建图，仅需通过上位机标记路径关键点即可。
 4. 展示视频：
-<iframe src="//player.bilibili.com/player.html?aid=729273126&bvid=BV1qS4y147Bt&cid=797226217&page=1&danmaku=0&high_quality=1" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1qS4y147Bt&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
 
 ### Foxglove Contributors
 向ROS开源可视化组织【Foxglove】提交了自己的组件
 * [https://github.com/foxglove/studio-extension-marketplace](https://github.com/foxglove/studio-extension-marketplace)
+
+### ROS环境快速部署
+在任何系统上快速轻量化安装ros环境进行开发
+* [https://github.com/yulong88888/win11_wsl2_docker_ros_gui](https://github.com/yulong88888/win11_wsl2_docker_ros_gui)
+
+### 浅尝自动驾驶
+1. 亮点：速度7m/s，rtk定位，stanley控制
+3. 展示视频：
+<iframe src="//player.bilibili.com/player.html?bvid=BV1zw411n7iv&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"> </iframe>
+
 
 ## 在校期间获奖情况
 |             **赛项名称**             |  **结果**  |  **时间**  |

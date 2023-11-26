@@ -34,6 +34,10 @@ module.exports = {
                         link: '/blog/jetson',
                     },
                     {
+                        text: 'CARLA',
+                        link: '/blog/carla',
+                    },
+                    {
                         text: 'Python',
                         link: '/blog/python',
                     },

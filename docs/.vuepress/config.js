@@ -41,6 +41,10 @@ module.exports = {
                         text: 'Python',
                         link: '/blog/python',
                     },
+                    {
+                        text: 'Music',
+                        link: '/blog/music',
+                    },
                 ],
             },
             { text: '关于', link: '/me' },

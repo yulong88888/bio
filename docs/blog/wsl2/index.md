@@ -29,6 +29,18 @@ sudo passwd <用户名>
 uname -a
 ```
 
+## 网卡镜像模式
+* 目的是让wsl和电脑为同一个ip地址[https://zhuanlan.zhihu.com/p/593263088](https://zhuanlan.zhihu.com/p/593263088)
+> WSL2版本: 2.4.11.0
+```shell:no-line-numbers
+# 在用户目录下新建".wslconfig"文件，粘贴以下内容，重启wsl即可
+[experimental]
+networkingMode=mirrored
+dnsTunneling=true
+firewall=true
+autoProxy=true
+```
+
 ## 硬件连接
 ```shell:no-line-numbers
 # win系统安装

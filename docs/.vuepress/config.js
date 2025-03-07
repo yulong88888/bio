@@ -45,6 +45,10 @@ module.exports = {
                         text: 'Music',
                         link: '/blog/music',
                     },
+                    {
+                        text: 'Linux',
+                        link: '/blog/linux',
+                    },
                 ],
             },
             { text: '关于', link: '/me' },

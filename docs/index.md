@@ -1,6 +1,6 @@
 ---
 home: true
-title: 主页
+title: 顾玉龙
 heroImage: /img/head.jpg
 heroText: 软件开发者-顾玉龙
 tagline: IOT / ROS / VueJS / Docker

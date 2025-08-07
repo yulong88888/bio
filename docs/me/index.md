@@ -12,10 +12,11 @@
 * 熟练掌握JavaScript、Java、C/C++、Python等语言，并均有案例支撑
 * 熟练使用Git对自己的代码进行版本控制
 * 熟练使用Github与开源项目进行反馈和建议
-* 熟练使用正版软件或开源软件进行开发，拒绝破解，尊重版权
 * 熟练使用PlatformIO开发ESP、STM系列微控器，曾参与交流stmduino与esp32开源仓库
 * 熟练使用VueJS技术做前端项目，包含机器人GUI，从根部摒弃QT又丑又重的界面
 * 熟练使用ROS技术，Jetson系列主机，Laser、IMU、RTK，制作室内外机器人，并均有案例支撑
+* 熟练掌握CAN、RS485、MODBUS通信接口，参与过国防科大的教具开发
+* 使用正版软件或开源软件进行开发，拒绝破解，尊重版权
 
 ## 圈子
 * 2021年有幸成为小米CyberDog第一批400个铲屎官中的一员，第一批是从28000人中选取400个，一起探索铁蛋，也正是因为这，让我结识了圈内的许多大佬，例如铁蛋的团队成员、宇树王总、稚晖、古月居、以及追觅的工程师等人，我们线上经常活跃在微信群聊中，交流开发心得，互相答疑解惑
@@ -71,6 +72,12 @@
 <iframe src="//player.bilibili.com/player.html?bvid=BV1qf4y1h74D&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
 <iframe src="//player.bilibili.com/player.html?bvid=BV1kC4y1P77g&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
 
+### 智慧交通沙盘2
+1. 硬件：沙盘 + limo + stm32
+2. 技术栈：ros + pio + rs曲线移植 + jetson inference
+3. 展示视频：
+<iframe src="//player.bilibili.com/player.html?bvid=BV1UztizzEyn&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"></iframe>
+
 ### ROS室内机器人
 1. 硬件：RPLidar-2d + IMU + Jetson Nano
 2. 技术栈：ros + cartographer + teb + vuejs + pytorch
@@ -95,8 +102,14 @@
 
 ### 浅尝自动驾驶
 1. 亮点：速度7m/s，rtk定位，stanley控制
-3. 展示视频：
+2. 展示视频：
 <iframe src="//player.bilibili.com/player.html?bvid=BV1zw411n7iv&page=1&high_quality=1&autoplay=false" scrolling="no" frameborder="no" framespacing="0" width="100%" height="480px" allowfullscreen="true"> </iframe>
+
+### 音卓尔练琴机
+1. 硬件：esp32
+2. 技术栈：arduino + lvgl + lamemp3 encoder + websocket
+3. C端产品，可京东淘宝搜索进行购买
+4. 展示视频： 火热剪辑中，敬请期待
 
 
 ## 在校期间获奖情况

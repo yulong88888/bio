@@ -12,6 +12,7 @@ module.exports = {
         lastUpdatedText: '上次更新',
         navbar: [
             { text: '主页', link: '/' },
+            { text: '关于', link: '/me' },
             {
                 text: '博客',
                 link: '/blog',
@@ -24,6 +25,10 @@ module.exports = {
                     {
                         text: 'ROS',
                         link: '/blog/ros',
+                    },
+                    {
+                        text: 'ADB',
+                        link: '/blog/adb',
                     },
                     {
                         text: 'WSL2',
@@ -51,7 +56,12 @@ module.exports = {
                     },
                 ],
             },
-            { text: '关于', link: '/me' },
+            {
+                text: '工具',
+                children: [
+                    { text: 'OpenCode-Chat-Logger', link: '/tools'},
+                ]
+            },
             {
                 text: '社交',
                 children: [
@@ -60,7 +70,7 @@ module.exports = {
                     { text: 'Douyin', link: 'https://www.douyin.com/user/MS4wLjABAAAAL_El12aqF_JQE5RdA8vjSNMQM9s5ek2P9MDReko4Sws' },
                     { text: 'Weibo', link: 'https://weibo.com/u/5401315308' },
                 ]
-            }
+            },
         ]
     }),
     plugins: [

@@ -23,9 +23,20 @@
                 [思考] {{ part.text }}
               </div>
               <div v-if="part.type === 'tool'" class="tool-call">
-                [工具] {{ part.tool }}
+                <div class="tool-header">
+                  <span class="tool-badge">工具</span>
+                  <span class="tool-name">{{ part.tool }}</span>
+                  <span v-if="part.state?.status" class="tool-status" :class="part.state.status">{{ part.state.status }}</span>
+                </div>
+                <div v-if="part.state?.input?.command" class="tool-command">
+                  <span class="tool-label">命令:</span>
+                  <code>{{ part.state.input.command }}</code>
+                </div>
+                <div v-if="part.state?.input?.description" class="tool-desc">
+                  {{ part.state.input.description }}
+                </div>
                 <div v-if="part.state?.output" class="tool-output">
-                  {{ part.state.output.substring(0, 500) }}
+                  {{ part.state.output }}
                 </div>
               </div>
             </template>
@@ -223,7 +234,7 @@ export default {
 }
 
 .message-bubble {
-  padding: 10px 14px;
+  padding: 2px 14px;
   border-radius: 8px;
   font-size: 15px;
   line-height: 1.5;
@@ -269,6 +280,63 @@ export default {
   color: #ff8000;
   margin: 4px 0;
   border-left: 3px solid #ff8000;
+  background: #fff8f0;
+}
+
+.tool-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.tool-badge {
+  background: #ff8000;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.tool-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.tool-status {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.tool-status.completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.tool-status.error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.tool-command {
+  margin: 4px 0;
+}
+
+.tool-command code {
+  background: #1a1a1a;
+  color: #00ffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.tool-desc {
+  color: #666;
+  margin: 4px 0;
+  font-size: 12px;
 }
 
 .tool-output {
